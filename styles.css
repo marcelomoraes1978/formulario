@@ -1,0 +1,73 @@
+/* Estilos globais para o corpo da página */
+body {
+    font-family: 'Arial', sans-serif;  /* Define a fonte do texto */
+    background-color: #3d5152;  /* Cor de fundo da página */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;  /* Define a altura da página como 100% da altura visível do dispositivo */
+}
+
+/* Estilos para o formulário */
+form {
+    background-color: #fff;  /* Cor de fundo do formulário */
+    padding: 20px;
+    border-radius: 8px;  /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+}
+
+/* Estilos para rótulos */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;  /* Texto em negrito */
+}
+
+/* Estilos para campos de entrada de texto, telefone e e-mail, e área de texto */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;  /* Largura total */
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;  /* Borda cinza claro */
+    border-radius: 4px;  /* Borda arredondada */
+}
+
+/* Estilo para ajustar a largura do campo de observação e o espaçamento entre as palavras */
+#observacao {
+    width: 100%;               /* Largura total */
+    white-space: pre-wrap;     /* Quebra de linha automática e preserva espaçamento */
+    overflow-wrap: break-word; /* Quebra de palavra para evitar rolagem horizontal */
+    word-break: break-word;    /* Quebra de palavra adicional */
+}
+
+
+
+
+/* Estilos para o botão de envio */
+input[type="button"] {
+    background-color: #4CAF50;  /* Cor de fundo do botão */
+    color: white;  /* Cor do texto do botão */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;  /* Borda arredondada */
+    cursor: pointer;
+}
+
+/* Estilos ao passar o mouse sobre o botão de envio */
+input[type="button"]:hover {
+    background-color: #45a049;  /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Estilos para o resultado do envio */
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;  /* Borda cinza claro */
+    border-radius: 4px;  /* Borda arredondada */
+}

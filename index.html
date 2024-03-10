@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <form id="meuFormulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" title="Apenas letras e espaços são permitidos" required>
+
+
+
+        <label for="fone">Telefone:</label>
+        <input type="tel" id="fone" name="fone" oninput="this.value = this.value.replace(/\D/g, ''); if(this.value.length > 11) this.value = this.value.slice(0, 11);" required>
+
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="observacao">Observação:</label>
+        <textarea id="observacao" name="observacao" rows="4" required></textarea>
+
+        <input type="button" value="Enviar" onclick="validarCampos()">
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
